@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Formulario de inscrição - Gonow</title>
+
+<meta charset="UTF-8">
+<meta name="language" content="pt-BR" />
+<meta name="description" content="html, titulos, cabeçalho,Sexo, meta tags"/>
+<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+	<div id="painelFormulario">
+<h1>Formulário de inscrição</h1>
+<hr/>	
+<form id="formulario-inscrição" name="painel-formulario" method="post" action="/inscrição/cadastrar">
+<table>
+<tr>
+
+<td><span>Nome:</span></td>
+<td><input type="text" id="nome" name="nome" class="campo-texto" /></td>
+</tr>
+
+<tr>
+<td><span>E-mail:</span></td>
+<td><input type="texte" id="email" name="email" class="campo.texto" /><td>
+</tr>
+<tr>
+	<td><span>Endereço: </span></td>
+		<td><input type="text" id="endereço" name="endereço" class="campo-texto"></td>
+	</tr>
+	<tr>
+		<td><span>Área de interesse: </span></td>
+		<td>
+			<select name="area-interesse" name="areaInteresse">
+				<option value="interface" selected="selected">Programador de interface</option>
+				<option value="java">Programador JAVA</option>
+				<option value="php">Programador PHP</option>
+				<option value="python">Programador PYTHON</option>
+				<opiton value="ruby">Programador RUBY</opiton>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td><span>Sexo: </span></td>
+		<td>
+			<input type="radio" id="generoMasc" name="genero" value="masc" />Masculino
+			<input type="radio" id="generoFem" name="genero" value="fem"/>Feminino
+		</td>
+	</tr>
+	<tr>
+		<td><span>Deseja cadastrar-se em nossa Newsletter: </span></td>
+		<td><input type="checkbox" name="newsletter" value="sim" checked="checked" />Sim</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<div>
+				<input type="checkbox" name="agree" value="sim" />
+			     Li e aceito os termos de responsabilidades.
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<div>
+				<button type="submit" id="enviar"> Enviar</button>
+			</div>
+	</tr>
+	
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
